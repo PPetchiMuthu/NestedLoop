@@ -1,0 +1,30 @@
+//using nested loop find the grade for the given mark
+
+import java.util.Scanner;
+
+public class NestedIf {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the mark : ");
+        int mark = scan.nextInt();
+        if(mark>35)
+              if (mark>50)
+                  if(mark>60)
+                    if(mark>70)
+                        if(mark>80)
+                          if(mark>90)
+                            System.out.println("O Grade");
+                           else
+                           System.out.println("A+ Grade");
+                        else
+                            System.out.println("A Grade");
+                    else
+                        System.out.println("B+ Grade");
+                  else
+                      System.out.println("B Grade");
+             else
+                System.out.println("C Grade");
+        else
+            System.out.println("Fail");
+    }
+}
